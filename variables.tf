@@ -38,7 +38,7 @@ variable "api_key" {
 }
 
 variable "tfe_organization" {
-  type        = list(string)
+  type        = string
   description = "(Required) Name of TFC organization."
 }
 
