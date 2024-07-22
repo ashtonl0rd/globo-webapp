@@ -7,6 +7,6 @@ data "aws_ssm_parameter" "amzn2_linux" {
 }
 
 data "tfe_outputs" "networking" {
-  organization = "var.tfe_organization"
-  workspace    = "var.tfe_workspace_name"
+  organization = var.tfe_organization
+  workspace    = var.tfe_workspace_name
 }
